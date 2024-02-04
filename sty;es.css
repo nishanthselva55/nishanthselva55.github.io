@@ -1,0 +1,73 @@
+/* styles.css */
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #dcdcdc; /* Light gray background */
+    color: #404040; /* Dark gray text color */
+    margin: 15pt; /* Greater than 10pt margin on all sides */
+    padding: 0;
+}
+
+/* Heading Tags */
+h1 {
+    font-size: 24pt; /* Larger font size for H1 */
+    color: #0066cc; /* Dark blue color */
+}
+
+h2 {
+    font-size: 20pt; /* Smaller font size for H2 compared to H1 */
+    color: #0099ff; /* Light blue color */
+}
+
+h3 {
+    font-size: 18pt; /* Smaller font size for H3 compared to H2 */
+    color: #00bfff; /* Sky blue color */
+}
+
+/* Paragraph Tags */
+p {
+    font-size: 14pt; /* Medium font size for paragraphs */
+    color: #333; /* Dark gray text color */
+}
+
+/* Link Tags */
+a:link, a:visited {
+    color: #006600; /* Dark green for non-visited and visited links */
+    text-decoration: none; /* Remove default underline */
+}
+
+a:hover {
+    color: #cc0000; /* Red color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+a:active {
+    color: #990000; /* Dark red on active */
+    text-decoration: underline; /* Underline on active */
+}
+
+/* CSS Table */
+.table-container {
+    display: table;
+    width: 100%;
+}
+
+.row {
+    display: table-row;
+}
+
+.column {
+    display: table-cell;
+    padding: 10pt;
+}
+
+/* Apply the table layout to organize links and descriptions */
+.link-cell {
+    width: 50%;
+}
+
+.description-cell {
+    width: 50%;
+}

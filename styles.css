@@ -65,9 +65,9 @@ a:active {
 
 /* Apply the table layout to organize links and descriptions */
 .link-cell {
-    width: 50%;
+    width: 20%;
 }
 
 .description-cell {
-    width: 50%;
+    width: 80%;
 }

@@ -1,73 +1,89 @@
-/* styles.css */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Pages Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> Hello! My name is Nishanth! </h1>
+    <p1> This is my GitHub page to tell you a little bit about myself.</p1>
 
-/* Body */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 12pt;
-    background-color: #dcdcdc; /* Light gray background */
-    color: #404040; /* Dark gray text color */
-    margin: 15pt; /* Greater than 10pt margin on all sides */
-    padding: 0;
-}
+    <h2>Education</h2>
+    <div class="table-container">
+        <div class="row">
+            <div class="column link-cell">
+                High School
+            </div>
+            <div class="column description-cell">
+                L'Amoreaux (2016-2020)
+            </div>
+        </div>
+        <div class="row">
+            <div class="column link-cell">
+                University
+            </div>
+            <div class="column description-cell">
+                I go to <a href="https://www.torontomu.ca/">Toronto Metropolitan University!</a> (2020-Present)
+            </div>
+        </div>
+    </div>
 
-/* Heading Tags */
-h1 {
-    font-size: 24pt; /* Larger font size for H1 */
-    color: #0066cc; /* Dark blue color */
-}
+    <h2>Courses/Programs</h2>
+    <p>I'm pursuing a Bachelor's degree in Business Technology Management. One course I found most useful is "Business Process Management" because it laid the foundation for understanding complex business processes.</p>
 
-h2 {
-    font-size: 20pt; /* Smaller font size for H2 compared to H1 */
-    color: #0099ff; /* Light blue color */
-}
+    <h3>Relevant Courses</h3>
+    <div class="table-container">
+        <div class="row">
+            <div class="column link-cell">
+                Principles of Marketing
+            </div>
+            <div class="column description-cell">
+                Description for Principles of Marketing
+            </div>
+        </div>
+        <div class="row">
+            <div class="column link-cell">
+                Systems Analysis and Design
+            </div>
+            <div class="column description-cell">
+                Description for Systems Analysis and Design
+            </div>
+        </div>
+        <div class="row">
+            <div class="column link-cell">
+                Introductory Macroeconomics
+            </div>
+            <div class="column description-cell">
+                Description for Introductory Macroeconomics
+            </div>
+        </div>
+    </div>
 
-h3 {
-    font-size: 18pt; /* Smaller font size for H3 compared to H2 */
-    color: #00bfff; /* Sky blue color */
-}
+    <h2>Educational Awards</h2>
+    <p>No educational awards yet.</p>
 
-/* Paragraph Tags */
-p {
-    font-size: 14pt; /* Medium font size for paragraphs */
-    color: #333; /* Dark gray text color */
-}
+    <h2>Extra-curricular Activities</h2>
+    <p>Member of the Model United Nations and the Computer Science Society. I currently work at <a href="https://www.mooresclothing.ca/">Moores</a> as a team lead.</p>
 
-/* Link Tags */
-a:link, a:visited {
-    color: #006600; /* Dark green for non-visited and visited links */
-    text-decoration: none; /* Remove default underline */
-}
-
-a:hover {
-    color: #cc0000; /* Red color on hover */
-    text-decoration: underline; /* Underline on hover */
-}
-
-a:active {
-    color: #990000; /* Dark red on active */
-    text-decoration: underline; /* Underline on active */
-}
-
-/* CSS Table */
-.table-container {
-    display: table;
-    width: 100%;
-}
-
-.row {
-    display: table-row;
-}
-
-.column {
-    display: table-cell;
-    padding: 10pt;
-}
-
-/* Apply the table layout to organize links and descriptions */
-.link-cell {
-    width: 20%;
-}
-
-.description-cell {
-    width: 80%;
-}
+    <div class="table-container">
+        <div class="row">
+            <div class="column link-cell">
+                <a href="https://www.torontomu.ca/">TMU Website</a>
+            </div>
+            <div class="column description-cell">
+                This is the website for the University I attend. It contains information about the programs available!
+            </div>
+        </div>
+        <div class="row">
+            <div class="column link-cell">
+                <a href="https://www.mooresclothing.ca/">Moores</a>
+            </div>
+            <div class="column description-cell">
+                This is the website for where I work. This link contains a shop where you can learn about getting suits custom tailored to you!
+            </div>
+        </div>
+    </div>
+</body>
+</html>

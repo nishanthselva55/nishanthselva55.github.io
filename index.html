@@ -5,13 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GitHub Pages Site</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#courses">Courses/Programs</a></li>
+            <li><a href="#awards">Educational Awards</a></li>
+            <li><a href="#activities">Extra-curricular Activities</a></li>
+        </ul>
+    </nav>
     <h1> Hello! My name is Nishanth! </h1>
     <p1> This is my GitHub page to tell you a little bit about myself.</p1>
 
-    <h2>Education</h2>
-    <!-- Education List -->
+    <div style="text-align: center;">
+        <img id="pic_of_me_professional" src="assets/pic_of_me_professinal.jpg" alt="Your Image" onclick="enlargeImage()">
+        <button onclick="promptName()" style="width: 200px; height: 50px; font-size: 16px; padding: 10px;">Enter Your Name</button>
+     <p id="output"></p>
+    </div>
+    
+    <h2 id="education">Education</h2>
+ 
     <div class="table-container">
         <div class="row">
             <div class="column link-cell">
@@ -31,11 +46,11 @@
         </div>
     </div>
 
-    <h2>Courses/Programs</h2>
+    <h2 id="courses">Courses/Programs</h2>
     <p>I'm pursuing a Bachelor's degree in Business Technology Management. One course I found most useful is "Business Process Management" because it laid the foundation for understanding complex business processes.</p>
 
     <h3>Relevant Courses</h3>
-    <!-- Relevant Courses List -->
+
     <div class="table-container">
         <div class="row">
             <div class="column link-cell">
@@ -63,13 +78,12 @@
         </div>
     </div>
 
-    <h2>Educational Awards</h2>
+    <h2 id="awards">Educational Awards</h2>
     <p>No educational awards yet.</p>
 
-    <h2>Extra-curricular Activities</h2>
+    <h2 id="activities">Extra-curricular Activities</h2>
     <p>Member of the Model United Nations and the Computer Science Society. I currently work at <a href="https://www.mooresclothing.ca/">Moores</a> as a team lead.</p>
 
-    <!-- Links and Descriptions List -->
     <div class="table-container">
         <div class="row">
             <div class="column link-cell">

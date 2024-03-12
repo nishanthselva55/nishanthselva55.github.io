@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Form Page</h1>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="Gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="Gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="Gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <p>What is your level of Education</p>
+        <input type="radio" id="ed1" name="Education" value="High School">
+        <label for="ed1">High School</label><br>
+        <input type="radio" id="ed2" name="Education" value="Bachelor's Degree">
+        <label for="ed2">Bachelor's Degree</label><br>
+        <input type="radio" id="ed3" name="Education" value="Master's Degree">
+        <label for="ed3">Master's Degree</label><br><br>
+
+        <p>Which type of job is best suitable for you</p>
+        <input type="radio" id="job1" name="Suitable Jobs" value="Hybrid">
+        <label for="job1">Hybrid</label><br>
+        <input type="radio" id="job2" name="Suitable Jobs" value="In Person">
+        <label for="job2">In Person</label><br>
+        <input type="radio" id="job3" name="Suitable Jobs" value="Remote">
+        <label for="job3">Remote</label><br><br>
+
+        <p>What skillset do you think is crucial in a management role?</p>
+        <input type="checkbox" id="mr1" name="Skillsets for Management Roles " value="Leadership">
+        <label for="mr1">Leadership</label><br>
+        <input type="checkbox" id="mr2" name="Skillsets for Management Roles " value="Communication">
+        <label for="mr2c">Communication</label><br>
+        <input type="checkbox" id="mr3" name="Skillsets for Management Roles " value="Decision Making">
+        <label for="mr3">Decision Making</label><br>
+        <input type="checkbox" id="mr4" name="Skillsets for Management Roles " value="Problem Solving">
+        <label for="mr4">Problem Solving</label><br>
+        <input type="checkbox" id="mr5" name="Skillsets for Management Roles " value="Strategic Planning">
+        <label for="mr5">Strategic Planning</label><br><br>
+
+        <p>How important is networking to your career for a management level position?</p>
+        <input type="radio" id="net1" name="Networking Importance" value="Very important">
+        <label for="net1">Very important</label><br>
+        <input type="radio" id="net2" name="Networking Importance" value="Semi important">
+        <label for="net2">Semi important</label><br>
+        <input type="radio" id="net3" name="Networking Importance" value="Not Very important">
+        <label for="net3">Not Very important</label><br><br>
+
+        <p>How would you deal with conflict among team members?</p>
+        <input type="checkbox" id="con1" name="Conflict Management" value="Mediating Conflicts Directly">
+        <label for="con">Mediating Conflicts Directly</label><br>
+        <input type="checkbox" id="con2" name="Conflict Management" value="Facilitating Open Discussion">
+        <label for="con">Facilitating Open Discussion</label><br>
+        <input type="checkbox" id="con3" name="Conflict Management" value="Execute conflict resolution strategies">
+        <label for="con">Execute conflict resolution strategies</label><br>
+        <input type="checkbox" id="con4" name="Conflict Management" value="Finding input from all parties involved">
+        <label for="con">Finding input from all parties involved</label><br><br>
+
+        <p>What electronic device do you primarily use to access the internet?</p>
+        <input type="radio" id="int1" name="Internet Access Device" value="PC">
+        <label for="int">PC</label><br>
+        <input type="radio" id="int2" name="Internet Access Device" value="Laptop">
+        <label for="int">Laptop</label><br>
+        <input type="radio" id="int3" name="Internet Access Device" value="Smartphone">
+        <label for="int">Smartphone</label><br>
+        <input type="radio" id="int4" name="Internet Access Device" value="Tablet">
+        <label for="int">Tablet</label><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <button type="submit" onclick="submitForm()">Submit</button>
+        <button type="button" onclick="clearForm()">Clear</button>
+    </form>
+
+    <div id="summary">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

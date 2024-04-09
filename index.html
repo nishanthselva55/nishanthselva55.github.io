@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="My website is to present myself in a digital way to potential employers.">
+    <meta name="keywords" content="technology, programming, digital marketing, tutorials, resources">
+    <title>Nishanth Selvarajah</title>
+    <meta name="author" content="Your Name">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GitHub Pages Site</title>
     <link rel="stylesheet" href="styles.css">
@@ -23,11 +27,20 @@
                 </div>
             </li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Favourite Colours :3</a>
+                <a href="javascript:void(0)" class="dropbtn">Accessibility</a>
                 <div class="dropdown-content">
-                    <a href="#">rainbow</a>
-                    <a href="#">pink </a>
-                    <a href="#">brown / green mix</a>
+                    <div id="color-scheme-selector">
+                        <label for="color-scheme">Choose Color Scheme:</label>
+                        <select id="color-scheme">
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                        </select>
+                    </div>
+                    <button id="text-to-speech-btn">Text to Speech</button>
+                    <div id="text-resize">
+                        <button id="increase-font-size">BIGGER</button>
+                        <button id="decrease-font-size">smaller</button>
+                    </div>
                 </div>
             </li>
             <li><a href="form.html">Form</a></li>
@@ -37,9 +50,9 @@
     <p1> This is my GitHub page to tell you a little bit about myself.</p1>
 
     <div style="text-align: center;">
-        <img id="pic_of_me_professional" src="assets/pic_of_me_professinal.jpg" alt="Your Image" onclick="enlargeImage()">
+        <img id="pic_of_me_professional" src="assets/pic_of_me_professinal.jpg" alt="This is a profesionally taken picture of me in a suit." onclick="enlargeImage()">
         <button onclick="promptName()" style="width: 200px; height: 50px; font-size: 16px; padding: 10px;">Enter Your Name</button>
-     <p id="output"></p>
+        <p id="output"></p>
     </div>
     
     <h2 id="education">Education</h2>

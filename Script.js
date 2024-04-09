@@ -11,15 +11,15 @@ function enlargeImage() {
     img.classList.toggle("enlarged");
 }
 
-// script.js
+
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('myForm');
 
-    // Handle form submission
+    
     form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent default form submission behavior
+        event.preventDefault(); 
 
-        // Get form data
+        
         const formData = {};
         for (let element of form.elements) {
             if (element.type === 'radio') {
@@ -38,23 +38,62 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        // Store form data in localStorage
+        
         localStorage.setItem('formData', JSON.stringify(formData));
 
-        // Display summary
+        
         displaySummary(formData);
     });
 
-    // Clear form fields
+    
     const clearButton = document.querySelector('button[type="button"]');
     clearButton.addEventListener('click', function () {
         form.reset();
-        document.getElementById('summary').innerHTML = ''; // Clear summary
+        document.getElementById('summary').innerHTML = ''; 
     });
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const textToSpeechBtn = document.getElementById('text-to-speech-btn');
+    textToSpeechBtn.addEventListener('click', function () {
+        const textToSpeak = document.body.innerText;
+        const utterance = new SpeechSynthesisUtterance(textToSpeak);
+        speechSynthesis.speak(utterance);
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const increaseFontSizeBtn = document.getElementById('increase-font-size');
+    const decreaseFontSizeBtn = document.getElementById('decrease-font-size');
+    const paragraphs = document.querySelectorAll('p, h1, h2, h3');
+
+    increaseFontSizeBtn.addEventListener('click', function () {
+        paragraphs.forEach(p => {
+            p.style.fontSize = parseInt(window.getComputedStyle(p).fontSize) + 1 + 'px';
+        });
+    });
+
+    decreaseFontSizeBtn.addEventListener('click', function () {
+        paragraphs.forEach(p => {
+            p.style.fontSize = parseInt(window.getComputedStyle(p).fontSize) - 1 + 'px';
+        });
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const colorSchemeSelector = document.getElementById('color-scheme');
+    colorSchemeSelector.addEventListener('change', function () {
+        document.body.classList.toggle('dark-mode', colorSchemeSelector.value === 'dark');
+    });
+});
+
+
 function displaySummary(formData) {
-    // Generate summary HTML
+    
     let summaryHTML = '<h2>Form Data Summary</h2>';
     for (let key in formData) {
         if (Array.isArray(formData[key])) {
@@ -64,6 +103,6 @@ function displaySummary(formData) {
         }
     }
 
-    // Display summary
+    
     document.getElementById('summary').innerHTML = summaryHTML;
 }
